@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1=parseInt(prompt("Introduce el primer número:"));
+        let n2=parseInt(prompt("Introduce el segundo número:"));
+        let n3=parseInt(prompt("Introduce el tercer número:"));
+
+       if(n1<n2 && n1<n3){
+        if(n2<n3){
+            document.write(n1+"<br>");
+            document.write(n2+"<br>");
+            document.write(n3+"<br>");
+        }else{
+            document.write(n1+"<br>");
+            document.write(n3+"<br>");
+            document.write(n2+"<br>");
+        }
+       }
+       if(n2<n1 && n2<n3){
+        if(n1<n3){
+            document.write(n2+"<br>");
+            document.write(n1+"<br>");
+            document.write(n3+"<br>");
+        }else{
+            document.write(n2+"<br>");
+            document.write(n3+"<br>");
+            document.write(n1+"<br>");
+        }
+
+       }
+       if(n3<n1 && n3<n2){
+        if(n1<n2){
+            document.write(n3+"<br>");
+            document.write(n1+"<br>");
+            document.write(n2+"<br>");
+        }else{
+            document.write(n3+"<br>");
+            document.write(n2+"<br>");
+            document.write(n1+"<br>");
+        }
+       }
+       if(!n1 && !n2 && !n3){
+        document.write("error");
+       }
+    </script>
+</body>
+</html>

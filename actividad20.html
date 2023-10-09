@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let nombre=prompt("Introduce el nombre del cliente");
+        let cantidad=parseInt(prompt("Introduce la cantidad de llantas a comprar"));
+        
+        if(cantidad<12){
+            let u=cantidad*700;
+            document.write("El cliente "+nombre+" pagara $700 por unidad<br>");
+            document.write("Compro " +cantidad+" llantas <br>");
+            document.write("Dando un total de $" +u);
+        }else if(cantidad>=12){
+            let u=cantidad*480;
+            document.write("El cliente "+nombre+" pagara $480 por unidad<br>");
+            document.write("Compro " +cantidad+" llantas <br>");
+            document.write("Dando un total de $" +u);
+            }else{
+                document.write("Error");
+            }
+    </script>
+</body>
+</html>

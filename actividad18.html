@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        let n1=parseInt(prompt("Introduce un número"));
+        i=2;
+       let primo=true;
+
+        while(i<n1){
+            if(n1%i===0){
+                primo=false;
+            }
+            i++;
+        }
+
+        if(primo===true){
+            document.write("El número "+n1+" es primo");
+        }else{
+            document.write("El número "+n1+" no es primo");
+        } 
+        if(n1==1){
+            document.write("El número "+n1+" no es primo");
+        }
+
+
+    
+    </script>
+</body>
+</html>

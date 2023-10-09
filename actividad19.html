@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre=prompt("Introduce el nombre del cliente");
+        let cantidad=parseInt(prompt("Introduce la cantidad de artículos comprados"));
+        if(cantidad<5){
+            document.write("El cliente "+nombre+" pagara en efectivo");
+        }else if(cantidad>=5 && cantidad<12){
+            document.write("El cliente "+nombre+" pagara con tarjeta");
+            }else if(cantidad>13){
+                document.write("El cliente "+nombre+" pagara con cheque");
+            }else{
+                document.write("Error");
+            }
+       
+    </script>
+</body>
+</html>
